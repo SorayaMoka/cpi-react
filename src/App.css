@@ -1,10 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 
 .App-header {
   background-color: #282c34;
@@ -19,4 +14,70 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.Project-title {
+  margin-top: 12px;
+}
+
+.panel-buttons {
+  padding-top: 10px;
+  background: #bdc3c7;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 20px;
+}
+
+.panel-input {
+  padding-top: 10px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.input-active {
+  padding-bottom: 20px;
+}
+
+.piles {
+  margin-left: 30px;
+}
+.decimal {
+  margin-left: 200px;
+}
+.btn-operation {
+  background: #d3496f;
+  color: white;
+}
+
+.btn-action {
+  background: rgba(41, 80, 78, 0.25);
+  color: white;
+  height: 48px;
+  width: 72px;
+}
+
+.btn-enter {
+  background: #8c95db;
+  color: white;
+}
+
+.btn-clearLastNumber {
+  background: #77b0b6;
+  color: white;
+}
+
+.btn-dropPiles {
+  background: #82b5bc;
+  color: white;
+}
+
+.btn-dropAll {
+  background: #0ca075;
+  color: white;
+}
+
+.btn-swap {
+  background: #53a05b;
+  color: white;
 }
