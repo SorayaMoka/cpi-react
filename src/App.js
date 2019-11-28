@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from './Button/Button';
 import DropAll from './Drop/DropAll';
 import DropPiles from './Drop/DropPiles';
-import DropLastNumber from './Drop/DropLastNumber';
+import DropLastDigit from './Drop/DropLastDigit';
 import Enter from './Enter/Enter';
 import Swap from './Swap/Swap';
 import './App.css';
@@ -78,7 +78,7 @@ class App extends Component {
     this.setState({piles: [activeEntry,...pilesStack.slice(2)]});
   };
 
-  dropLastNumber = () => {
+  dropLastDigit = () => {
     const pilesStack = this.state.piles;
     let activeEntry = pilesStack[0];
     activeEntry = activeEntry ? activeEntry.toString().slice(0,-1) : activeEntry;
@@ -106,7 +106,7 @@ class App extends Component {
           <div className="col-2"><Button symbol='–' click={() => this.subtraction()}/></div>
           <div className="col-2"><Button symbol='×' click={() => this.multiplication()}/></div>
           <div className="col-2"><Button symbol='÷' click={() => this.division()}/></div>
-          <div className="col-2"><DropLastNumber click={() => this.dropLastNumber()}/></div>
+          <div className="col-2"><DropLastDigit click={() => this.dropLastDigit()}/></div>
           <div className="col-2"><Enter click={() => this.enterPile()}/></div>
         </div>
       </div>
